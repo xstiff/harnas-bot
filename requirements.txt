@@ -31,7 +31,6 @@ sentry_sdk.integrations.aiohttp.py
 discord.ext.commands.py
 yahoo_weather.weather.py
 yahoo_weather.config.units.py
-requests.py
 calendar.py
 time.py
 discord.py
