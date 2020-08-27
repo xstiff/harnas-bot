@@ -1,4 +1,3 @@
-request.py
 asyncio.py
 discord.py
 random.py
