@@ -1,6 +1,5 @@
 asyncio
 discord
-random
 discord.ext
 calendar
 pyowm.utils
@@ -19,7 +18,6 @@ logging
 traceback
 typing
 logging.handlers
-random
 i18n
 psutil
 sentry_sdk

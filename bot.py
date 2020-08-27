@@ -40,7 +40,7 @@ bot=commands.Bot(command_prefix=get_prefix,description='Harnaś | xstiff#8062', 
 
 
 
-exts=['music', 'poll', 'hang']
+exts=['music', 'poll']
 
 
 @bot.event
@@ -334,15 +334,15 @@ hasla = [
 'telefon',
 'zmywarka'
 ]
-@bot.command()
-@commands.has_permissions(administrator=True)
-async def reset(ctx):
-    system('cls')
-    bot.unload_extension('hang')
-    bot.load_extension('hang')
-    await ctx.send(':hourglass: hang.py')
-    await ctx.send(':white_check_mark: przeładowano!')
-    return
+#@bot.command()
+#@commands.has_permissions(administrator=True)
+#async def reset(ctx):
+#    system('cls')
+#    bot.unload_extension('hang')
+#    bot.load_extension('hang')
+#    await ctx.send(':hourglass: hang.py')
+#    await ctx.send(':white_check_mark: przeładowano!')
+#    return
 
 for i in exts:
     bot.load_extension(i)
