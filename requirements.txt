@@ -1,6 +1,5 @@
 asyncio
 discord
-calendar
 pyowm.utils
 pyowm.owm
 datetime
@@ -24,7 +23,6 @@ discord.utils
 sentry_sdk.integrations.aiohttp
 yahoo_weather.weather
 yahoo_weather.config.units
-calendar
 time
 discord
 asyncio
