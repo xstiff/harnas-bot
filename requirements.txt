@@ -1,6 +1,5 @@
 asyncio
 discord
-discord.ext
 calendar
 pyowm.utils
 pyowm.owm
@@ -12,7 +11,6 @@ async_timeout
 traceback
 sys
 itertools
-discord.ext
 os
 logging
 traceback
@@ -22,16 +20,13 @@ i18n
 psutil
 sentry_sdk
 wavelink
-discord.ext.commands
 discord.utils
 sentry_sdk.integrations.aiohttp
-discord.ext.commands
 yahoo_weather.weather
 yahoo_weather.config.units
 calendar
 time
 discord
-discord.ext
 asyncio
 itertools
 sys
