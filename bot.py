@@ -315,11 +315,15 @@ async def help(ctx):
     #wiadomosc_help = await ctx.send(embed=embed, delete_after=30)
     #wiadomosc_help
     await author_msg.send(embed=embed, delete_after=180)
-    await author_msg.send(':white_check_mark: Znikną za 180 sekund')
     await author_msg.send('```= = = = = = = = = Harnaś = = = = = = = = = ```')
     await ctx.send(':white_check_mark:  Wysłałem ci wiadomość prywatną :) | ' + str(author_msg))
 
 
+
+@bot.command()
+async def kys(ctx, *, channel: discord.VoiceChannel=None):
+    for members in ctx.author.voice.channel.members:
+        await members.edit(voice_channel=None)
 
 
         

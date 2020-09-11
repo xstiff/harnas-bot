@@ -247,7 +247,7 @@ class Music(commands.Cog):
 
         await ctx.send(f' :white_check_mark: Podłączono do: **{channel}**', delete_after=20)
 
-    @commands.command(name='play', aliases=['sing'])
+    @commands.command(name='play', aliases=['sing', 'p'])
     async def play_(self, ctx, *, search: str):
         """Request a song and add it to the queue.
         This command attempts to join a valid voice channel if the bot is not already in one.
@@ -299,7 +299,7 @@ class Music(commands.Cog):
         vc.resume()
         await ctx.send(f'**`{ctx.author}`**: Wznowił! :white_check_mark: ')
 
-    @commands.command(name='skip')
+    @commands.command(name='skip', aliases=['s'])
     async def skip_(self, ctx):
         """Skip the song."""
         vc = ctx.voice_client
@@ -392,6 +392,7 @@ class Music(commands.Cog):
             return await ctx.send(' :x: Aktualnie nie gram', delete_after=20)
 
         await self.cleanup(ctx.guild)
+        return await ctx.send(' :x: STOP!', delete_after=20)
 
 
 def setup(bot):
