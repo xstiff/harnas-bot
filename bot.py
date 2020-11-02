@@ -352,4 +352,4 @@ for i in exts:
     bot.load_extension(i)
 
 
-bot.run('NzQzMjY3MzI4MDY5NzMwNDA2.XzSLpA.d9za0mPuVQ2Ev_dIkJHB-UtV9ok')
+bot.run('TOKEN HERE') # < ------------ PUT YOUR TOKEN
