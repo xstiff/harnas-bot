@@ -196,12 +196,7 @@ async def pogoda(ctx, message_1: str='Góra', message_2: str='PL'):
     await ctx.message.delete()
 
 
-kys = [
- "SPIERDALAJ :joy: ",
- "CHUJ CI W DUPE :joy: ",
- "DZIWKO :joy: "
- ]
- 
+
 kanal = [
  "721106140515139735",
  "643930813951377438",
@@ -213,11 +208,7 @@ kanal = [
  "687744437450965039",
  "687744572042117243"
 ]
-#@bot.event
-#async def on_message(message):
-#
-#   if not message.author.bot:
-#        await message.channel.send(random.choice(kys))
+
 
 @commands.cooldown(1, 3)
 @bot.command(pass_context=True)
@@ -352,4 +343,4 @@ for i in exts:
     bot.load_extension(i)
 
 
-bot.run('TOKEN HERE') # < ------------ PUT YOUR TOKEN
+bot.run('TOKEN HERE') 
